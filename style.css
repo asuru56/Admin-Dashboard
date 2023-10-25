@@ -40,7 +40,7 @@ a{
 }
 
 .searchbox{
-    width: 300px; /* Adjust the width to your preference */
+    width: 1200px; /* Adjust the width to your preference */
     padding: 10px;
             border: 1px solid #ccc;
             border-radius: 20px; /* Adjust the radius to control the curvature */
@@ -68,4 +68,5 @@ a{
 
 .top_text{
     display:flex; 
+    
 }
