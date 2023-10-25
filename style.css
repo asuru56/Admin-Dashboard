@@ -8,9 +8,21 @@ body{
 }
 navbar{
     display:grid;
+    grid-template-rows: minmax(20px,20px) 1fr 1fr; 
     background-color: rgb(0, 87, 180);
 
 }
+
+.url{
+    display:grid;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.url2{
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
 
 .dashboard{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -29,9 +41,31 @@ a{
 
 .searchbox{
     width: 300px; /* Adjust the width to your preference */
-            padding: 10px;
+    padding: 10px;
             border: 1px solid #ccc;
             border-radius: 20px; /* Adjust the radius to control the curvature */
             outline: none;
             font-size: 16px;
+}
+
+.round-icon {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the icon round */
+    overflow: hidden; /* Clips the image to the rounded shape */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+
+    /* You can use flex or grid to center the image within the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.round-icon img {
+    width: 100%; /* Ensure the image fills the round container */
+    height: 100%; /* Ensure the image fills the round container */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+.top_text{
+    display:flex; 
 }
