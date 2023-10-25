@@ -3,9 +3,10 @@ body{
 }
 .container{
     display:grid;
-    grid-template-columns: minmax(200px, 200px) 1fr  1fr; 
-    grid-template-rows: minmax(200px, 100vh) 1fr 1fr;   
+    grid-template-columns: minmax(200px, 200px) 1fr 1fr 1fr  ; 
+    grid-template-rows: minmax(200px, 100vh) 1fr ;   
 }
+
 navbar{
     display:grid;
     grid-template-rows: minmax(20px,20px) 1fr 1fr; 
@@ -35,9 +36,6 @@ a{
 
 }
 
-.username{
-    grid-column: minmax(200px,200px);
-}
 
 .searchbox{
     width: minmax(200px,1200px); /* Adjust the width to your preference */
@@ -73,12 +71,16 @@ a{
 .projects-grid{
     display:grid;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr;   
+    grid-template-rows: 1fr 1fr;  
+    background-color: rgb(148, 148, 250); 
 }
 
 .projects{
     border: 2px solid yellow; 
     margin: 10px;
     padding:45px;
+    background-color: white;
 }
+
+ 
 
