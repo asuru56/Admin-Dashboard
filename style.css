@@ -68,13 +68,23 @@ a{
     display:flex; 
     
 }
-.projects-grid,.bottom-right{
+.bottom-right{
     display:grid;
-    grid-template-columns: 1fr 1fr;   
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 75vh;
+    background-color: rgb(148, 148, 250); ;
+
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;   
     background-color: rgb(148, 148, 250); 
 }
 
 .projects{
+    
     border: 2px solid yellow; 
     margin: 10px;
     padding:45px;
@@ -86,8 +96,12 @@ a{
     justify-content: space-between;
 }
 
-.annon{
-    border: 2px solid yellow; 
+.annon{ 
+    padding:10px;
+    background-color: white;
+}
+
+.trending{
     padding:10px;
     background-color: white;
 }
